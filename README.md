@@ -28,29 +28,29 @@ pnpm run dev
 
 ## 页面实现
 
-![ogi](D:\学习\program\前端学习\React\react-projects\react-backstage-manage\react-backstage-manage\public\descimgs\login.jpg)
+![ogi](.\public\descimgs\login.jpg)
 
-![elcom](D:\学习\program\前端学习\React\react-projects\react-backstage-manage\react-backstage-manage\public\descimgs\welcome.jpg)
+![elcom](.\public\descimgs\welcome.jpg)
 
-![ashboar](D:\学习\program\前端学习\React\react-projects\react-backstage-manage\react-backstage-manage\public\descimgs\dashboard.jpg)
+![ashboar](.\public\descimgs\dashboard.jpg)
 
-![ashboard](D:\学习\program\前端学习\React\react-projects\react-backstage-manage\react-backstage-manage\public\descimgs\dashboard2.jpg)
+![ashboard](.\public\descimgs\dashboard2.jpg)
 
-![arkthem](D:\学习\program\前端学习\React\react-projects\react-backstage-manage\react-backstage-manage\public\descimgs\darktheme.jpg)
+![arkthem](.\public\descimgs\darktheme.jpg)
 
-![serlis](D:\学习\program\前端学习\React\react-projects\react-backstage-manage\react-backstage-manage\public\descimgs\userlist.jpg)
+![serlis](.\public\descimgs\userlist.jpg)
 
-![](D:\学习\program\前端学习\React\react-projects\react-backstage-manage\react-backstage-manage\public\descimgs\createuser.jpg)
+![](.\public\descimgs\createuser.jpg)
 
-![rderdetai](D:\学习\program\前端学习\React\react-projects\react-backstage-manage\react-backstage-manage\public\descimgs\orderdetail.jpg)
+![rderdetai](.\public\descimgs\orderdetail.jpg)
 
-![rdermarke](D:\学习\program\前端学习\React\react-projects\react-backstage-manage\react-backstage-manage\public\descimgs\ordermarker.jpg)
+![rdermarke](.\public\descimgs\ordermarker.jpg)
 
-![rdertrac](D:\学习\program\前端学习\React\react-projects\react-backstage-manage\react-backstage-manage\public\descimgs\ordertrack.jpg)
+![rdertrac](.\public\descimgs\ordertrack.jpg)
 
-![rdercluste](D:\学习\program\前端学习\React\react-projects\react-backstage-manage\react-backstage-manage\public\descimgs\ordercluster.jpg)
+![rdercluste](.\public\descimgs\ordercluster.jpg)
 
-![riverlis](D:\学习\program\前端学习\React\react-projects\react-backstage-manage\react-backstage-manage\public\descimgs\driverlist.jpg)
+![riverlis](.\public\descimgs\driverlist.jpg)
 
 
 
