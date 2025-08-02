@@ -1,0 +1,17 @@
+.sideMenu {
+  min-height: 100vh;
+}
+.sideMenu .logoContainer {
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.sideMenu .logoContainer .logo {
+  width: 2.5rem;
+  margin-right: 1.5rem;
+}
+.sideMenu .logoContainer .title {
+  font-size: 1.5rem;
+}

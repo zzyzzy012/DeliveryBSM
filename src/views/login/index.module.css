@@ -1,0 +1,22 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background: url(/imgs/login_bg.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.login .title {
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.login .loginWrapper {
+  background: #fff;
+  width: 500px;
+  padding: 1rem;
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}

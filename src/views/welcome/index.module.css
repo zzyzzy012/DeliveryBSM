@@ -1,0 +1,21 @@
+.welcome {
+  height: calc(100vh - (60px + 16px * 2 + 22px + 24px * 2));
+  background: url('imgs/dd-welcome-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+.welcome .descWapper {
+  color: #fff;
+  position: relative;
+  top: 15%;
+  left: 20%;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+}
+.welcome .descWapper .title {
+  font-size: 4rem;
+  line-height: 1.5;
+}
+.welcome .descWapper .desc {
+  font-size: 1rem;
+}

@@ -1,0 +1,26 @@
+.navHeader {
+  min-width: 500px;
+  height: 60px;
+  color: var(--dark-color);
+  background-color: var(--dark-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  padding: 0 1.5rem;
+}
+.navHeader .left {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navHeader .right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navHeader .title {
+  cursor: pointer;
+}

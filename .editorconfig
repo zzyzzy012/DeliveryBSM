@@ -1,0 +1,10 @@
+# https://editorconfig.org
+root = true  # 表示这是项目的根配置文件，编辑器在查找 .editorconfig 时遇到这个就不会再往上层目录查找
+
+[*]  # 代表对所有文件生效（可以用特定后缀如[*.js] 只对 js文件生效）
+charset = utf-8  # 文件编码格式为 UTF-8
+indent_style = tab  # 缩进风格使用 tab（制表符），而不是空格
+indent_size = 2  # 缩进的宽度为2（如果是tab，通常编辑器会把一个tab显示为2个空格宽度）
+end_of_line = lf  # 换行符使用 LF（Unix/Linux风格），而不是 CRLF（Windows风格）
+insert_final_newline = true  # 文件结尾自动插入一个换行符
+trim_trailing_whitespace = true  # 自动删除每行结尾多余的空白字符（空格或tab）
