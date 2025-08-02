@@ -28,31 +28,50 @@ pnpm run dev
 
 ## 页面实现
 
-![ogi](.\public\descimgs\login.jpg)
+### 登录页面
 
-![elcom](.\public\descimgs\welcome.jpg)
+![登录页面](./public/descimgs/login.jpg)
 
-![ashboar](.\public\descimgs\dashboard.jpg)
+### 欢迎页面
 
-![ashboard](.\public\descimgs\dashboard2.jpg)
+![欢迎页面](./public/descimgs/welcome.jpg)
 
-![arkthem](.\public\descimgs\darktheme.jpg)
+### 仪表板
 
-![serlis](.\public\descimgs\userlist.jpg)
+![仪表板](./public/descimgs/dashboard.jpg)
 
-![](.\public\descimgs\createuser.jpg)
+### 仪表板2
 
-![rderdetai](.\public\descimgs\orderdetail.jpg)
+![仪表板2](./public/descimgs/dashboard2.jpg)
 
-![rdermarke](.\public\descimgs\ordermarker.jpg)
+### 深色主题
 
-![rdertrac](.\public\descimgs\ordertrack.jpg)
+![深色主题](./public/descimgs/darktheme.jpg)
 
-![rdercluste](.\public\descimgs\ordercluster.jpg)
+### 用户列表
 
-![riverlis](.\public\descimgs\driverlist.jpg)
+![用户列表](./public/descimgs/userlist.jpg)
 
+### 创建用户
 
+![创建用户](./public/descimgs/createuser.jpg)
 
+### 订单详情
 
+![订单详情](./public/descimgs/orderdetail.jpg)
 
+### 订单标记
+
+![订单标记](./public/descimgs/ordermarker.jpg)
+
+### 订单轨迹
+
+![订单轨迹](./public/descimgs/ordertrack.jpg)
+
+### 订单聚合
+
+![订单聚合](./public/descimgs/ordercluster.jpg)
+
+### 司机列表
+
+![司机列表](./public/descimgs/driverlist.jpg)
