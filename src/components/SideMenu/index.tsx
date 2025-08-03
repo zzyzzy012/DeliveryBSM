@@ -46,6 +46,8 @@ const items: MenuItem[] = [
   ])
 ]
 
+const { Sider } = Layout
+
 // 菜单路径映射表
 const menuPathMap: Record<string, { title: string; parent?: string }> = {
   '/dashboard': { title: '工作台' },
@@ -58,42 +60,40 @@ const menuPathMap: Record<string, { title: string; parent?: string }> = {
   '/driverlist': { title: '司机列表', parent: '订单管理' }
 }
 
-const { Sider } = Layout
-
 function SideMenu() {
   const [collapsed, setCollapsed] = useState(false)
+  // 控制哪些父级菜单是展开状态
   const [openKeys, setOpenKeys] = useState<string[]>([])
   const navigate = useNavigate() // 路由跳转函数
   const location = useLocation() // 当前路由信息
   const { updateBreadcrumbs } = useStore()
 
-  // 更新面包屑
-  const updateBreadcrumb = (path: string) => {
-    const menuInfo = menuPathMap[path]
-    if (menuInfo) {
-      const breadcrumbs: BreadcrumbItem[] = [{ title: '首页', path: '/welcome' }]
-
-      if (menuInfo.parent) {
-        breadcrumbs.push({ title: menuInfo.parent })
-      }
-
-      breadcrumbs.push({ title: menuInfo.title, path })
-      updateBreadcrumbs(breadcrumbs)
-    }
-  }
-
   // 处理菜单点击事件
   const handleMenuClick: MenuProps['onClick'] = ({ key }) => {
     // 只处理有实际路由的菜单项
     if (key.startsWith('/')) {
-      navigate(key)
-      updateBreadcrumb(key)
+      navigate(key) // 路由跳转
+      updateBreadcrumb(key) // 更新面包屑
+    }
+  }
+  // 更新面包屑
+  const updateBreadcrumb = (path: string) => {
+    const menuInfo = menuPathMap[path] // 获取当前路径对应的菜单标题及父级
+    if (menuInfo) {
+      const breadcrumbs: BreadcrumbItem[] = [{ title: '首页', path: '/welcome' }] // 固定首页
+      // 如果有父级菜单，添加父级菜单
+      if (menuInfo.parent) {
+        breadcrumbs.push({ title: menuInfo.parent }) // 二级菜单
+      }
+      // 添加当前页面
+      breadcrumbs.push({ title: menuInfo.title, path }) // 当前页面
+      updateBreadcrumbs(breadcrumbs) // 更新 store 中的面包屑数据
     }
   }
 
   // 处理子菜单展开/收起事件
   const handleOpenChange: MenuProps['onOpenChange'] = keys => {
-    setOpenKeys(keys)
+    setOpenKeys(keys) // 更新展开的菜单项状态
   }
 
   // 根据当前路径设置选中的菜单项

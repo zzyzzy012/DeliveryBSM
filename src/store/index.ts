@@ -4,7 +4,7 @@ import storage from '@/utils/storage'
 // 面包屑项类型
 export interface BreadcrumbItem {
   title: string
-  path?: string
+  path?: string // 可选路径，用于点击跳转
 }
 
 const useStore = create<{

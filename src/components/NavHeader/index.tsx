@@ -11,13 +11,6 @@ function NavHeader() {
   const { userInfo, breadcrumbs, isDark, updateIsDark } = useStore()
   const navigate = useNavigate()
 
-  // 处理面包屑点击
-  const handleBreadcrumbClick = (path?: string) => {
-    if (path) {
-      navigate(path)
-    }
-  }
-
   // 转换面包屑数据格式
   const breadcrumbItems = breadcrumbs.map((item, index) => ({
     title:
@@ -39,6 +32,30 @@ function NavHeader() {
       ),
     href: item.path || undefined
   }))
+
+  // 处理面包屑点击
+  const handleBreadcrumbClick = (path?: string) => {
+    if (path) {
+      navigate(path)
+    }
+  }
+
+  // 切换深色主题
+  const onThemeChange = (isDark: boolean) => {
+    if (isDark) {
+      document.documentElement.dataset.theme = 'dark'
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.dataset.theme = 'light'
+      document.documentElement.classList.remove('dark')
+    }
+    storage.set('isDark', isDark)
+    updateIsDark(isDark)
+  }
+  useEffect(() => {
+    onThemeChange(isDark)
+  }, [isDark])
+
   // 下拉菜单项
   const menuItems: MenuProps['items'] = [
     {
@@ -64,21 +81,6 @@ function NavHeader() {
   // const onMenuClick: MenuProps['onClick'] = () => {
   //   console.log('xxx')
   // }
-  // 切换深色主题
-  const onThemeChange = (isDark: boolean) => {
-    if (isDark) {
-      document.documentElement.dataset.theme = 'dark'
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.dataset.theme = 'light'
-      document.documentElement.classList.remove('dark')
-    }
-    storage.set('isDark', isDark)
-    updateIsDark(isDark)
-  }
-  useEffect(() => {
-    onThemeChange(isDark)
-  }, [isDark])
 
   return (
     <div className={styles.navHeader}>
